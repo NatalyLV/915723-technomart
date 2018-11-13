@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Наталья Анохина](https://up.htmlacademy.ru/htmlcss/23/user/915723).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Мальнев].(https://htmlacademy.ru/profile/fuckomako).
 
 ---
 
