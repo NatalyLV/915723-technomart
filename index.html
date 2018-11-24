@@ -8,7 +8,12 @@
   	<header class="main-header">
   		<div class="top-menu">
   			<a href="#" class="shop-logo">Техномаркт</a>
-  			<!--здесь будет форма --> Поиск <!--   -->
+  			<form class="search-form" action="#" method="post">
+  				<input type="search" name="search-field" id="site-search">
+  				<label for="site-search">
+  				Поиск:
+  				</label>
+  			</form>
   			<a href="#" class="shop-bookmarks-button">Закладки:</a>
   			<a href="#" class="shop-busket-button">Корзина:</a>
   			<a href="#" class="shop-order-button">Оформить заказ:</a>
@@ -208,7 +213,7 @@
     			</ul>
     		</div>
     		<div class="footer-contacts">
-    		г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     		<span class="footer-telephone">+7 (812) 555-05-55</span>
     		</div>
     		<ul class="footer-menu">
@@ -239,5 +244,31 @@
     		</div>
     	</section>
   	</footer>
+  	<div class="modal-dialog">
+  		<button class="modal-close" type="button" title="Закрыть">
+  			Закрыть
+  		</button>
+  	<form class="message-form" action="#" method="post">
+  		<p>
+  			<input type="text" name="name" placeholder="имя фамилия" id="name-for-email">
+  			<label for="name-for-email">
+  				Ваше имя:
+  			</label>
+  		</p>
+  		<p>
+  			<input type="text" name="e-mail" placeholder="e-mail@example.com" id="adress-for-email">
+  			<label for="adress-for-email">
+  				Ваш e-mail:
+  			</label>
+  		</p>
+  		<p>
+  			<textarea name="content" placeholder="В свободной форме" id="text-for-email"></textarea>
+  			<label for="text-for-email">
+  				Текст письма:
+  			</label>
+  		</p>
+		<input class="button" type="submit" value="Отправить">
+  	</form> 
+  	</div>
   </body>
 </html>

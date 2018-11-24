@@ -8,7 +8,12 @@
 <header class="main-header">
 	<div class="top-menu">
   		<a href="#" class="shop-logo">Техномаркт</a>
-  		<!--здесь будет форма --> Поиск <!--   -->
+  		<form class="search-form" action="#" method="post">
+  			<input type="search" name="search-field" id="site-search">
+  			<label for="site-search">
+  			Поиск:
+  			</label>
+  		</form>
   		<a href="#" class="shop-bookmarks-button">Закладки:</a>
   		<a href="#" class="shop-busket-button">Корзина:10</a>
   		<a href="#" class="shop-order-button">Оформить заказ:</a>
@@ -39,13 +44,73 @@
 <main class="container">
 	<h1>Перфораторы</h1>
 	<ul class="breadcrumbs">
-		<li><a href="index.html">Главная</a></li>
+		<li><a href="index.html" class="icon-home">Главная</a></li>
 		<li><a href="#">Каталог</a></li>
 		<li><a href="#">Инструмент</a></li>
 		<li><a href="#" class="current">Перфораторы</a></li>
 	</ul>
 	<section class="filter-section">
-		<!--Здесь будет форма-->
+		<h2>
+			Фильтр:
+		</h2>
+		<form class="filter" action="#" method="get">
+			<fieldset>
+			<legend>Цена:</legend>
+			</fieldset>
+			<fieldset>
+			<legend>Производители:</legend>
+			<ul>
+				<li class="filter-option">
+					<input class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" checked id="filter-bosch">
+					<label for="filter-bosch">
+					BOSCH
+				</label>
+				</li>
+				<li class="filter-option">
+					<input class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="interscol" id="filter-interscol">
+					<label for="filter-interscol">
+					ИНТЕРСКОЛ
+					</label>
+				</li>
+				<li class="filter-option">
+					<input class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="MAKIta" checked id="filter-makita">
+					<label for="filter-makita">
+					MAKIta
+				</label>
+				</li>
+				<li class="filter-option">
+					<input class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-dewalt">
+					<label for="filter-dewalt">
+					Dewalt
+					</label>
+				</li>
+				<li class="filter-option">
+					<input class="visualy-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-hitachi">
+					<label for="filter-hitachi">
+					Hitachi
+					</label>
+				</li>
+			</ul>
+			</fieldset>
+			<fieldset>
+			<legend>Питание:</legend>
+			<ul>
+				<li class="filter-option">
+					<input class="visualy-hidden filter-input filter-input-radio" type="radio" name="battery" value="battery" id="accumulator-power-battery">
+					<label for="accumulator-power-battery">
+					Аккумуляторные
+					</label>
+				</li>
+				<li class="filter-option">
+					<input class="visualy-hidden filter-input filter-input-radio" type="radio" name="battery" value="battery" id="mains-power-battery">
+					<label for="mains-power-battery">
+					Сетевые
+					</label>
+				</li>
+			</ul>
+			</fieldset>
+			<button type="submit" class="filter-button button">Показать</button>
+		</form>
 	</section>
 	<section class="catalog-products-list">
 		<h2 class="visualy-hidden">Карточки товаров</h2>
@@ -196,7 +261,7 @@
     			</ul>
     		</div>
     		<div class="footer-contacts">
-    		г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     		<span class="footer-telephone">+7 (812) 555-05-55</span>
     		</div>
     		<ul class="footer-menu">
@@ -227,5 +292,17 @@
     		</div>
     	</section>
   	</footer>
+  	<div class="modal-dialog">
+  		<button class="modal-close" type="button" title="Закрыть">
+  			Закрыть
+  		</button>
+  		<p class="modal-dialog-content">
+  			Товар добавлен в карзину!
+  		</p>
+  		<a class="button" href="#">Оформить заказ</a>
+  		<button class="button button-cancel">
+  			Продолжить покупки
+  		</button>
+  	</div>
 </body>
 </html>
