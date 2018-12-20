@@ -15,9 +15,7 @@
   			<a href="#" class="shop-logo">Техномарт</a>
   			<form class="search-form" action="#" method="post">
   				<input type="search" name="search-field" id="site-search" placeholder="Поиск:">
-  				<label for="site-search">
-  				<!--Поиск:-->
-  				</label>
+  				<label for="site-search" class="visually-hidden">Поиск:</label>
   			</form>
   			<div class="right-buttons">
   			<a href="#" class="shop-bookmarks-button">Закладки: 0</a>
@@ -252,7 +250,7 @@
 			<a href="#" class="contacts-map">
 				<img src="img/map.png" width="300" height="158" alt="Карта">
 			</a>
-			<a href="#" class="button">Заблудились? Напишите нам</a>
+			<a href="#" class="button modal-message">Заблудились? Напишите нам</a>
   		</section>
   		</div>
   		</div>
@@ -351,5 +349,16 @@
   <p><img src="img/map-big.jpg" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
   <button class="modal-close" type="button">Закрыть</button>
 </section>
+<script type="text/javascript">
+	var message = document.querySelector(".modal-message");
+	var popup = document.querySelector(".modal-mail");
+	var close = document.querySelector(".modal-close");
+	message.addEventListener("click", function(evt) {evt.preventDefault();
+	popup.classList.add("modal-show");
+	});
+	close.addEventListener("click", function(evt) {evt.preventDefault();
+	popup.classList.remove("modal-show");
+	});
+</script>
   </body>
 </html>
