@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/script.js" defer></script> 
   </head>
   <body>
   	<header class="main-header">
@@ -36,10 +37,10 @@
     		<span class="header-telephone">+7 (812) 555-05-55</span>
     		<p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     		</div>
-    		<ul class="header-button">
-    			<li class="enter-button-style"><a href="#" class="enter-button">Войти</a></li>
-    			<li class="registration-button-style"><a href="#" class="registration-button">Регистрация</a></li>
-    		</ul>
+    		<div class="header-button">
+    			<a href="#" class="enter-button">Войти</a>
+    			<a href="#" class="registration-button">Регистрация</a>
+    		</div>
     		</div>
     	<nav class="bottom-main-menu">
     		<ul class="main-navigation">
@@ -86,14 +87,14 @@
                 <div class="slide-content">
                   <h3>Дрели</h3>
                   <p>Соседям на радость!</p>
-                  <a class="btn link" href="#">Открыть каталог</a>
+                  <a class="btn link" href="catalog.html">Открыть каталог</a>
                 </div>
               </div>
               <div class="slide slide2">
                 <div class="slide-content">
                   <h3>Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
-                  <a class="link" href="#">Открыть каталог</a>
+                  <a class="link" href="catalog.html">Открыть каталог</a>
                 </div>
               </div>
             </div>
@@ -185,14 +186,12 @@
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 			</div>
 			<div class="services-information">
-			<ul class="services-list">
-				<li class="services-list-current"><input type="radio" id="button-1" name="navigation" checked>
-					<label for="button-1">Доставка</label></li>
-				<li class="services-list-warranty"><input type="radio" id="button-2" name="navigation">
+				<input type="radio" id="button-1" name="navigation" checked>
+					<label for="button-1">Доставка</label>
+				<input type="radio" id="button-2" name="navigation">
 					<label for="button-2">Гарантия</label></li>
-				<li class="services-list-credit"><input type="radio" id="button-3" name="navigation">
-					<label for="button-3">Кредит</label></li>
-			</ul>
+				<input type="radio" id="button-3" name="navigation">
+					<label for="button-3">Кредит</label>
 			<div class="slider-2">
 				<section class="slider-content">
 				<h2>Доставка</h2>
@@ -259,7 +258,7 @@
   		<section class="footer-top wrapper">
   			<h2 class="visually-hidden">Нижнее меню сайта</h2> 
   			<div class="footer-contacts">
-  				<a href="https://htmlacademy.ru/" class="shop-logo">Техномарт</a>
+  				<a href="https://htmlacademy.ru/intensive/htmlcss" class="shop-logo">Техномарт</a>
   				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
     		    +7 (812) 555-05-55</p>
     		</div>
@@ -344,21 +343,24 @@
   	</form> 
   	</div>
   	</section>
-  	<section class="modal modal-map">
+  	<section class="modal modal-map hidden">
   <h2 class="visually-hidden">Как до нас добраться</h2>
   <p><img src="img/map-big.jpg" width="940" height="447" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-  <button class="modal-close" type="button">Закрыть</button>
+  <button class="close-button" type="button">Закрыть</button>
 </section>
-<script type="text/javascript">
-	var message = document.querySelector(".modal-message");
-	var popup = document.querySelector(".modal-mail");
-	var close = document.querySelector(".modal-close");
-	message.addEventListener("click", function(evt) {evt.preventDefault();
-	popup.classList.add("modal-show");
-	});
-	close.addEventListener("click", function(evt) {evt.preventDefault();
-	popup.classList.remove("modal-show");
-	});
-</script>
+<div class="modal-dialog">
+  		<button class="modal-close" type="button" title="Закрыть">
+  			Закрыть
+  		</button>
+  		<p class="modal-dialog-content">
+  			Товар добавлен в корзину!
+  		</p>
+  		<div class="modal-bottom">
+  		<a class="button" href="#">Оформить заказ</a>
+  		<button class="button button-cancel">
+  			Продолжить покупки
+  		</button>
+  		</div>
+  	</div>
   </body>
 </html>
