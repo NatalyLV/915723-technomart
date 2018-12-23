@@ -214,6 +214,7 @@ input[type="search"]:focus {
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
+  margin: 0;
 }
 .adress {
 	display: flex;
@@ -255,6 +256,9 @@ input[type="search"]:focus {
 	background-color: #ffffff;
 	font-size: 21px;
 	line-height: 21px;
+}
+.registration-button {
+  padding: 14px 0 0 0;
 }
 .enter-button:hover,
 .registration-button:hover {
@@ -852,6 +856,7 @@ padding: 0px 32px 0 19px;
 	font-size: 13px;
 	line-height: 24px;
 	font-family: "PT Sans", Arial, sans-serif; 
+  width: 400px;
 }
 .services-information {
 	position: relative;
@@ -912,6 +917,9 @@ padding: 0px 32px 0 19px;
     width: 620px;
     padding-bottom: 139px;
 }
+.slider-content p {
+  width: 275px;
+}
 .slider-content:nth-child(1) {
     background: url("../img/slider-4.png") no-repeat 100% -10%;
 }
@@ -943,6 +951,9 @@ padding: 0px 32px 0 19px;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
+}
+.about-company .transfer {
+  width: 390px;
 }
 .partners-list {
 	display: block;
@@ -1042,7 +1053,7 @@ padding: 0px 32px 0 19px;
 }
 .company-information {
 	width: 540px;
-    margin-bottom: 86px;
+  margin-bottom: 86px;
 }
 .contact-company {
 	width: 300px;
@@ -1053,14 +1064,15 @@ padding: 0px 32px 0 19px;
 }
 .footer-contacts .shop-logo {
 	padding: 16.5px 0;
-    font-size: 30px;
-    line-height: 30px;
+  font-size: 30px;
+  line-height: 30px;
 }
 .footer-contacts p {
 	color: #f3f7f9;
-    font-size: 18px;
-    line-height: 24px;
-    margin: 33px 0 50px 3px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 33px 0 50px 3px;
+  width: 331px;
 }
 .footer-navigation {
 	margin: 0;
