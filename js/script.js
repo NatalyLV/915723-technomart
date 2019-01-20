@@ -19,5 +19,5 @@
 	map_big.classList.add("hidden");
 	map.classList.remove("hidden");
 	});
-	//test
+	
 	
